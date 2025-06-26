@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Portfolio</title>
+<link href="stylex.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="wrapper">
+				
+<nav>
+	<ul>
+   		<li><a href="index.html">Home</a></li>
+   		<li><a href="projects.html">Projects</a></li>
+   		<li><a href="music.html">Music</a></li>
+   		<li><a href="https://github.com/dance1m">GitHub</a></li>
+	</ul>
+</nav>
+									   
+	
+<main>
+	<div id="me">
+	<div><img src="selfPortrait.jpg" alt="Self Portrait" style="width: 600px;"></div>
+	<section class="name"><h2><span class="bordered-text">Cody Schinning</span></h2></section>
+</div>	
+<div class="flow">
+	<section>
+    <h3>Bio</h3>
+      <p>I went to penn state for 4 years and have one more year left to graduate</p>
+	</section>
+	<section>
+   <h3>Hobbies and Skills</h3>
+      <p>Piano, Guitar, japanese, yoyo, rubix cubes, 3d printing, microelectronics</p>
+        </section>
+</div>
+
+
+<section id="contact">
+	<h3>Contact Me Below</h3>
+<p>If you would like to reach me, fill out the form with the required fields that are marked with an asterisk *</p>
+
+<form method="post" action="https://webdevbasics.net/scripts/pacific.php">
+<label for="myFName">*First Name: </label>
+<input type="text" id="myFName" name="myFName" required="required">
+<label for="myLName">*Last Name: </label>
+<input type="text" id="myLName" name="myLName" required="required">
+<label for="myEmail">*E-mail: </label>
+<input type="email" id="myEmail" name="myEmail" required="required">
+<label for="myPhone">Phone: </label>
+<input type="tel" id="myPhone" name="myPhone" maxlength="12">
+<label for="myArrival">Arrival Date: </label>
+<input type="myArrival" id="myArrival" name="myArrival">
+<label for="myNights">Nights: </label>
+<input type="number" id="myNights" name="myNights" min="1" max="14">
+<label for="myComments">*Comments: </label>
+<textarea id="myComments" name="myComments" rows="4" cols="30" required="required"></textarea>
+<input type="submit" value="submit">
+</form>
+</section>
+
+
+</main>
+</div>
+</body>
+</html>
