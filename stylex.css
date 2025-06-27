@@ -61,47 +61,49 @@ main {padding: 10px 20px 20px 20px;
 #me img{border-radius: 200px;
 	border: 2px solid #000033;
 	margin-right: 40px;}
-#contact{margin-top: 20px;}
+#contact{margin-top: 30px;}
 
 #projects{display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(2,1fr);
-	gap: 50px;
-	justify-content: center;}
-#projects section.box{
-	height: 430px;
-	width: auto;
-	border: 0px;}
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;}
 #projects section.box img{
-	max-height: 430px;		/*1280x720 image*/
-	width: auto; display: block; border-radius: 18px; border: 2px solid #000033;}
+	max-height: 400px;		/*1280x720 image*/
+	width: auto; display: block; 
+	border-radius: 18px; border: 2px solid #000033;}
 #projects section.box video{
-	max-height: 430px;		/*1280x720 image*/
-	width: auto; display: block; border-radius: 18px; border: 2px solid #000033;}
+	max-height: 400px;		/*1280x720 image*/
+	width: auto; display: block; 
+	border-radius: 18px; border: 2px solid #000033; 
+	justify-content: center;}
 
 #music {display: grid;
-	grid-template-columns: 1fr 1fr 1fr;}
+	grid-template-columns: repeat(3, 1fr);
+	gap:20;}
 #music .section{border: 0px;}
 #displayText {border-radius: 18px;
 	border: 2px solid #000033;
 	height: 15em;
+	width: 100%;
 	padding-top: 10px;
+	box-sizing: border-box;
 	white-space: pre-line;
 	font-family: Georgia, "Times New Roman", serif;}
 #displayText .text{font-size: 28px;
 	text-decoration: underline;
 	text-align: center;
-	display: block;}
+	display: block;
+	font-family: Georgia, "Times New Roman", serif;}
 #displayText .desc{
-	font-size: 18px;
-	line-height: 1;}
+	line-height: 1;
+	font-family: Georgia, "Times New Roman", serif;}
 
-
-
-section{font-size: 18px;
+section.one{font-size: 18px;
 	border: 2px solid #262626;
 	border-radius: 18px;}
-	
+section.two{font-size: 18px;
+	border: 2px solid #262626;
+	border-radius: 18px;
+	width: 708px;}
 h2 {color: #013468;
 	font-size: 90px;
 	text-align: center;
@@ -143,7 +145,7 @@ p {padding: 0px 20px;
 	display: inline-block;
 	text-align: left;}
 
-.flow {gap: 10px;}
+.flow {gap: 10px; margin-top: 10px;}
 
 form {display: flex; flex-flow: column nowrap;
 	margin: 0px 1.5em}
@@ -158,10 +160,10 @@ td {text-align: center;}
 .text {text-align: left;}
 tr:nth-of-type(odd) {background-color: #98dbff;}
 
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
 nav {display: grid;
 	grid-template-columns: repeat(2, 140px);
-	grid-template-rows: repeat(2,140px);
+	grid-template-rows: repeat(2, 140px);
 	justify-content: center;
 	gap: 10px;
 	padding-bottom: 10px;
@@ -169,8 +171,43 @@ nav {display: grid;
 	height: auto;}
 nav ul {display: contents;}
 nav a {display: flex;}
+main{padding: 5px;}
+body{margin:5px;}
+h2 {margin: 10px auto 10px auto;}
+h5 {margin-bottom: 10px;}
+.title{display: block;
+	text-align: center;}
+#me {display: block;}
+#me img{display: block; max-width: 560px; margin-left: auto; margin-right: auto; margin-bottom: 5px;}
+#music {display: grid;
+	grid-template-columns: 1fr;}
+table {margin-bottom: 5px;}
+#projects {display: grid;
+	grid-template-columns: 1fr;
+	margin: 0px; gap: 10px;}
+#projects section.box img{max-width: 560px;
+	max-height: auto; display:block; margin: 0px auto 0px auto;}
+#projects section.box video{max-width: 560px;
+	max-height: auto; display:block; margin: 0px auto 0px auto;}
+section.one{margin-bottom: 10px;}
+section.two{max-width: 560px;}
+
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+nav {display: flex;
+	grid-template-columns: 1fr ;
+	grid-template-rows: auto;
+	justify-content: center;
+	gap: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	height: auto;}
+nav ul {display: flex; flex-wrap: wrap; justify-content: center; padding: 0px 30px 0px 30px; margin-bottom: 0px;}
+nav a {display: flex;}
 section {padding-left: 2em;
-		padding-right: 2em;}
+		padding-right: 2em;
+		display: flex; flex-wrap: wrap; justify-content: center;}
 	.content main {display: grid;
 		grid-template-rows: auto;
 		grid-template-columns: 1fr 1fr ;}
@@ -184,15 +221,30 @@ section {padding-left: 2em;
 			width:60%;
 		 input[type="submit"] {grid-column: 2/3; width:9em;}
 		      }
+	h5{display: block; text-align: center;}
+	h4{display: grid; grid-template-columns: 1fr; text-align: center; }
 	.flow {display: flex;
 	flex-direction: column;
 	align-items: center;}
+table{margin-bottom: 5px;}
 	#me{display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding-top: 10px;}
 	#me section.name h2{
 	padding: 0px 0px 0px 0px;} /*buds name up against picture in phone*/
+#music .section{display: block; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;}
+#music {display: block; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;}
+#projects {display: block;
+	grid-template-columns: 1fr;
+ margin-left: auto; margin-right: auto;}
+#projects section.box img{max-width: 560px;
+	max-height: auto; display:block; margin: 10px auto 10px auto;}
+#projects section.box video{max-width: 560px;
+	max-height: auto; display:block; margin: 0px auto 0px auto;}
+section.one{margin-bottom: 10px;}
+section.two{max-width: 560px; margin-left: auto; margin-right: auto; margin-bottom: 10px; margin-top: 10px;}
+
 	
 }
 @media (min-width: 1024px) {
@@ -214,4 +266,30 @@ section {padding-left: 2em;
 	.flow {display: flex;
 		flex-direction: row;}
 	.flow section {flex: 1}
+#music {display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;}
+ #displayText {
+    grid-column: 1 / -1;}
+ #music .section {
+    display: block;}
+#projects section.box {
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+  position: relative;}
+#projects section.box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 18px;
+  border: 2px solid #000033;}
+#projects section.box video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 18px;
+  border: 2px solid #000033;}
 }
