@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Google Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!--Favicon-->
+  <link rel="icon" href="ImgMp3Mp4/ShoeFavicon.png" type="image/png">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--BootStrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="stylex.css" rel="stylesheet">
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <div class="grid-nav">
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ProjectMain.html">Projects</a></li>
+        <li><a href="ProjectMusic.html">Music</a></li>
+        <li><a href="https://github.com/dance1m" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+    </nav>
+
+
+    <main class="main">
+      <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-start m-3">
+        <div class="me-lg-5">
+          <img src="ImgMp3Mp4/selfPortrait.jpg" alt="Self Portrait"
+            style="border-radius: 60px; max-width: 600px; width: 100%; height: auto;">
+        </div>
+        <div>
+          <h2>Cody Schinning</h2>
+        </div>
+      </div>
+      <div class="content">
+        <div class="box">
+          <h3>Bio</h3>
+          <p>I did HVAC over the summer with my dad during my teen years. 2014-2016 I worked at a rollerskating rink
+            during the weekends. After highschool I went to Penn State where I did 4 years of mechanical engineering and
+            still have 1 more year left to
+            graduate. I took some time off due to poor mental after covid and worked as an auto lube tech for 2 years
+            while I returned to school part time. Working as an auto lube tech I discovered my inherent leadership
+            personality as I tended to both manage customers and work on cars, along with delegating resposibilities
+            with my coworkers to make sure tasks were being completed. I am good at solving problems and would usually
+            be the go to person when issues arose. I am an all or nothing kind of person. When I pick up hobbies its the
+            only thing I want to do, and when I have free time I can be found researching and studying that hobby.</p>
+        </div>
+        <div class="box">
+          <h3>Hobbies and Skills</h3>
+          <p>I learned how to play piano in highschool, and guitar off and on over the last 15 years. I have taught
+            myself JLPT N5/N4 and up to 4th grade kanji; ~600 unique characters. I spent a few months getting good at
+            yoyoing and solving rubix cubes. I ended up getting my average 3x3 rubix cube solve time down to 1:15s by
+            learning around 21 different algorithms. I currently spend most of my free time working on my 5-axis robotic
+            arm and playing videogames with friends. Some skills I have developed include 3D modeling with Fusion 360
+            and Solidworks, programming languages such as python, c++, html, css.</p>
+        </div>
+      </div>
+      <div id="contact" class="main box">
+        <h3>Contact Me Below</h3>
+        <p>If you would like to reach me, fill out the form with the required fields that are marked with an asterisk *
+        </p>
+
+        <form id="contact-form">
+          <label for="myFName">*First Name: </label>
+          <input type="text" id="myFName" name="myFName" required="required">
+          <label for="myLName">*Last Name: </label>
+          <input type="text" id="myLName" name="myLName" required="required">
+          <label for="myEmail">*E-mail: </label>
+          <input type="email" id="myEmail" name="myEmail" required="required">
+          <label for="myPhone">Phone: </label>
+          <input type="tel" id="myPhone" name="myPhone" maxlength="12">
+          <label for="myComments">*Comments: </label>
+          <textarea id="myComments" name="myComments" rows="4" cols="30" required="required"></textarea>
+          <input type="submit" value="submit">
+        </form>
+      </div>
+      <div id="form-feedback"></div>
+    </main>
+  </div>
+  <!--Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>

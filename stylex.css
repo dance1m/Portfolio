@@ -1,0 +1,191 @@
+/* CSS reset */
+body, header, nav, main, footer, img, h1, h3, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+*{box-sizing:border-box;}
+html{
+  min-height: 100%;}    /*gets background to cover whole page*/
+body { background-color: #bfe7fd;
+    color: #000033; 
+    font-family: "Overpass", "Times New Roman", serif;
+    font-weight: bold;
+    margin: auto 10px;
+    background: #bfe7fd;}
+
+#wrapper {color:#000033;}
+
+/*Nav CSS Styling*/
+nav{
+  margin: 10px;
+  display: flex;
+  justify-content: center; /*centers blocks horz and vert*/
+  align-items: center;}
+
+nav a {
+  text-decoration: none;
+  justify-content: center; /*centers text in blocks*/
+  align-items: center;
+  font-weight: bold;
+  font-size: 26px;}
+
+nav ul{
+  list-style-type: none; /*removes bullet points*/
+  border: 3px solid #000033;
+  border-radius: 18px;
+  background-color: #bfe7fd;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);}
+
+nav li a{
+  display: flex;
+  border: 3px solid #000033;
+  border-radius: 18px;
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  margin: 10px;}
+
+nav ul li:nth-child(1) a{background-image: url(ImgMp3Mp4/homebutton.png);}
+nav ul li:nth-child(2) a{background-image: url(ImgMp3Mp4/projectsbutton.png);}
+nav ul li:nth-child(3) a{background-image: url(ImgMp3Mp4/musicNote.jpg);}
+nav ul li:nth-child(4) a{background-image: url(ImgMp3Mp4/github.png);}
+
+ul li a:link {color:#013468; text-shadow:2px 2px 2px #000000;}
+ul li a:visited {color:#006dcc; text-shadow:0px 0px 2px #66b3ff;}
+ul li a:hover {color:#004080; text-shadow:0px 0px 2px #66b3ff;}
+
+main{}
+p{
+  font-size: 20px;}
+h2{
+  color: #013468;
+  text-align: center;
+  font-size: 90px;
+  font-weight: bold;}
+h3{
+  color: #013468;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;}
+h3 a:link {color:#013468; text-shadow:0px 0px 2px #66b3ff;}
+h3 a:visited {color:#006dcc; text-shadow:0px 0px 2px #66b3ff;}
+h3 a:hover {color:#004080; text-shadow:0px 0px 2px #66b3ff;}
+
+
+#demo {
+  height: 1920px;
+}
+
+#demo .carousel-item img{
+  height: 100%;
+  max-height: none;
+  width: auto;
+  object-fit: contain;}
+#demo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.box {
+  display: block;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  border: 3px solid #000033;
+  margin-bottom: 10px;}
+img{
+  border-radius: 20px;
+  border: 3px solid #000033;
+  max-width: 100%;
+  max-height: 460px;
+  height: auto;
+  margin-bottom: 10px;}
+
+video{
+  border-radius: 20px;
+  border: 3px solid #000033;
+  max-height: 460px;
+  margin-bottom: 10px;}
+
+ul{
+  list-style-type: none;
+  font-size: 20px;
+  color: #000033; 
+  font-family: "Overpass", "Times New Roman", serif;
+  font-weight: bold;}
+ul li a{
+  text-decoration: none;}
+
+form {display: flex; flex-flow: column nowrap;
+  margin: 0px 1.5em}
+input, textarea {margin-bottom: 1em;}
+table {border: 2px solid #000033;
+    border-radius: 6px;
+    border-collapse: separate;
+    width: 98%;}
+td, th {padding: 0.5em; border: 2px solid #000033;
+    border-radius: 6px;}
+td {text-align: center;}
+.text {text-align: left;}
+tr:nth-of-type(odd) {background-color: #98dbff;}
+
+
+
+@media (max-width: 600px) {
+  .carousel-caption{
+    margin-top: 20px;}
+  h2{
+    font-size: 70px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  nav ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);}
+  .content{
+    display: grid;}
+  main img{
+    display: block;
+    margin: 0 auto 10px auto;
+  .carousel-caption{
+    margin-top: 20px;}
+  }
+}
+@media (min-width: 1024px) {
+  .grid-nav {
+    display: grid;
+    grid-template-columns: 160px 1fr;}
+  .nav{
+    grid-column: 1 / 2;}
+  .main{
+    grid-column: 2 / 3;}
+  nav{
+    height: 570px;}
+  nav ul{
+    grid-template-columns: 1fr;}
+  .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;}
+  .name{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;}
+  .carousel-caption{
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+  }
+}
