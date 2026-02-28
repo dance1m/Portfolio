@@ -179,6 +179,12 @@ tr:nth-of-type(odd) {background-color: #98dbff;}
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 20px;}
+  .contact{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 812px;
+    margin: auto;
+  }
   .name{
     display: grid;
     grid-template-columns: auto auto;
